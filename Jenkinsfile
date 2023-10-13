@@ -5,6 +5,10 @@ pipeline {
     environment {
         Applicant_Name = 'EUREKA'
     }
+    tools {
+        maven 'maven-3.8.8'
+        jdk 'jdk-17'
+    }
     stages {
         stage ('Build') {
           steps {
