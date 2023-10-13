@@ -14,6 +14,7 @@ pipeline {
           steps {
             echo "buliding the ${env.Application_Name} application"
             sh "mvn clean package -Dskiptests=true"
+            archiveArtifacts artifacts: 'target/*jar', followSymlinks: false
           }
         }
     }
