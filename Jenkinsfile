@@ -16,7 +16,7 @@ pipeline {
             echo "Building the ${env.APPLICATION_NAME} application"
                 // maven build should happpen here 
                 sh "mvn clean package -DskipTests=true"
-                archiveArtifacts artifacts: 'target/*jar', followSymlinks: false
+                
             }
         }
         stage ('Unit Tests'){
