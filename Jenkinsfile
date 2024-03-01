@@ -44,9 +44,9 @@ pipeline {
         SONAR_TOKEN = credentials('sonar_creds')
         POM_VERSION = readMavenPom().getVersion()
         POM_PACKAGING = readMavenPom().getPackaging()
-        DOCKER_HUB = "docker.io/devopswithcloudhub"
+        DOCKER_HUB = "docker.io/199522" 
         DOCKER_REPO = "i27eurekaproject"
-        USER_NAME = "devopswithcloudhub" // UserID for Dockerhub
+        USER_NAME = "199522" // UserID for Dockerhub
         DOCKER_CREDS = credentials('dockerhub_creds')
     }
     stages {
