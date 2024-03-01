@@ -1,7 +1,7 @@
 // Test file
 pipeline {
     agent {
-        label 'maven-slave'
+        label 'slave10'
     } 
     tools {
         maven 'Maven-3.8.8'
