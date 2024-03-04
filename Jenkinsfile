@@ -4,7 +4,7 @@ pipeline {
         label 'slave1'
     } 
     tools {
-        maven 'Maven-3.8.8'
+        maven 'Maven-3.8.8.1'
         jdk 'JDK-17'
     }
     parameters {
